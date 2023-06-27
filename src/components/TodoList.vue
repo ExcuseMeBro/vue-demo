@@ -1,8 +1,8 @@
 <script setup>
-import Logo from '@/components/icons/Logo.vue'
-import TrashIcon from '@/components/icons/TrashIcon.vue'
-import PlusIcon from '@/components/icons/PlusIcon.vue'
-import PencilIcon from '@/components/icons/PencilIcon.vue'
+import Logo from '~/components/icons/Logo.vue'
+import TrashIcon from '~/components/icons/TrashIcon.vue'
+import PlusIcon from '~/components/icons/PlusIcon.vue'
+import PencilIcon from '~/components/icons/PencilIcon.vue'
 import { computed, ref } from 'vue';
 
 const todo = ref('')

@@ -8,7 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "@apollo/client": "^3.7.16",
+    "graphql": "^16.7.0",
+    "react": "^18.2.0",
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
