@@ -4,7 +4,7 @@ import { ref } from 'vue'
 import Header from './components/Header.vue';
 import Question from './components/Question.vue';
 import TodoList from './components/TodoList.vue';
-import TanStack from './components/TanStack.vue';
+import Stream from './components/Stream.vue';
 
 /* For message */
 /* const message = ref("Hello world!")
@@ -61,7 +61,7 @@ const tagGenerator = () => {
     <li v-for="(i, idx) in listLength" :key="idx">item</li>
   </ol> -->
   <!-- <TodoList/> -->
-  <TanStack />
+  <Stream />
   <!-- <Question/> -->
 </template>
 
