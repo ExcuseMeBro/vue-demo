@@ -1,16 +1,17 @@
 <script setup>
 import { generate } from '@vue/compiler-core';
-import {ref} from 'vue'
+import { ref } from 'vue'
 import Header from './components/Header.vue';
 import Question from './components/Question.vue';
 import TodoList from './components/TodoList.vue';
+import TanStack from './components/TanStack.vue';
 
 /* For message */
 /* const message = ref("Hello world!")
 
 console.log(message.value); */
 
-function say(){
+function say() {
   message.value = "Salom Dunyo!"
 }
 
@@ -20,9 +21,9 @@ const isShowHeaderOne = ref(false)
 const toggleHeaderOne = () => isShowHeaderOne.value = !isShowHeaderOne.value
 
 /* IMAGE */
-const imageUrl = ref('/a.jpg') 
+const imageUrl = ref('/a.jpg')
 
-const toggleImage = () => imageUrl.value = imageUrl.value.includes('a') ?  '/b.jpg' : '/a.jpg'
+const toggleImage = () => imageUrl.value = imageUrl.value.includes('a') ? '/b.jpg' : '/a.jpg'
 
 /* Toggle dog image */
 const isShowDogImage = ref(false)
@@ -59,7 +60,8 @@ const tagGenerator = () => {
   <ol>
     <li v-for="(i, idx) in listLength" :key="idx">item</li>
   </ol> -->
-  <TodoList/>
+  <!-- <TodoList/> -->
+  <TanStack />
   <!-- <Question/> -->
 </template>
 
