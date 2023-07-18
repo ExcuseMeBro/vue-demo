@@ -5,6 +5,9 @@ import Header from './components/Header.vue';
 import Question from './components/Question.vue';
 import TodoList from './components/TodoList.vue';
 import TanStack from './components/TanStack.vue';
+import Drop from './components/Drop.vue';
+
+import { initFlowbite } from 'flowbite';
 
 /* For message */
 /* const message = ref("Hello world!")
@@ -38,6 +41,24 @@ const tagGenerator = () => {
   listLength.value = inputNumber.value
   inputNumber.value = null
 }
+
+const items = ref([
+  {
+    items: [1, 2],
+    id: 'a',
+    dropId: 'da'
+  },
+  {
+    items: [1, 2, 3],
+    id: 'b',
+    dropId: 'db'
+  },
+  {
+    items: [1, 2, 3, 4, 5],
+    id: 'c',
+    dropId: 'dc'
+  },
+])
 </script>
 
 <template>
@@ -61,8 +82,11 @@ const tagGenerator = () => {
     <li v-for="(i, idx) in listLength" :key="idx">item</li>
   </ol> -->
   <!-- <TodoList/> -->
-  <TanStack />
+  <!-- <TanStack /> -->
   <!-- <Question/> -->
+  <div v-for="(item, idx) in items" :key="idx">
+    <Drop :item="item?.items" :id="item?.id" :dropId="item?.dropId" />
+  </div>
 </template>
 
 <style></style>

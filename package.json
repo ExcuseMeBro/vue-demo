@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@tanstack/vue-query": "^4.29.20",
+    "flowbite": "^1.7.0",
     "vue": "^3.2.47"
   },
   "devDependencies": {
