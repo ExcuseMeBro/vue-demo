@@ -6,6 +6,7 @@ import Question from './components/Question.vue';
 import TodoList from './components/TodoList.vue';
 import TanStack from './components/TanStack.vue';
 import Drop from './components/Drop.vue';
+import TransferList from './components/TransferList.vue';
 
 import { initFlowbite } from 'flowbite';
 
@@ -86,6 +87,10 @@ const items = ref([
   <!-- <Question/> -->
   <div v-for="(item, idx) in items" :key="idx">
     <Drop :item="item?.items" :id="item?.id" :dropId="item?.dropId" />
+  </div>
+
+  <div class="w-3/4 mx-auto">
+    <TransferList />
   </div>
 </template>
 
