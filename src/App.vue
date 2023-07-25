@@ -5,6 +5,7 @@ import Header from './components/Header.vue';
 import Question from './components/Question.vue';
 import TodoList from './components/TodoList.vue';
 import TanStack from './components/TanStack.vue';
+import Checkboxes from './components/Checkboxes.vue';
 
 /* For message */
 /* const message = ref("Hello world!")
@@ -61,8 +62,9 @@ const tagGenerator = () => {
     <li v-for="(i, idx) in listLength" :key="idx">item</li>
   </ol> -->
   <!-- <TodoList/> -->
-  <TanStack />
+  <!-- <TanStack /> -->
   <!-- <Question/> -->
+  <Checkboxes />
 </template>
 
 <style></style>
