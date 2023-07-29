@@ -1,11 +1,12 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { defaultConfig, plugin } from "@formkit/vue";
 import { VueQueryPlugin } from "@tanstack/vue-query";
+import { createApp } from "vue";
+import "./assets/tailwind.css";
+import config from "../formkit.config.js";
+import App from "./App.vue";
 
-import './assets/main.css'
-import './assets/tailwind.css'
+const app = createApp(App);
 
-const app = createApp(App)
-
-app.use(VueQueryPlugin)
-app.mount('#app')
+app.use(plugin, defaultConfig(config));
+app.use(VueQueryPlugin);
+app.mount("#app");
